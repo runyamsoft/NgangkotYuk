@@ -9,22 +9,150 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.runyamsoft.ngangkotyuk.MainActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="50dp"
-        android:background="#FF6600">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="bottom"
+        android:weightSum="100"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="20"
+            android:background="#FF6600"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+            
+            <ImageView
+                android:id="@+id/banner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/c_main_logo_top"/>
 
-        <ImageView
-            android:layout_width="50sp"
-            android:layout_height="30sp"
-            android:id="@+id/imageView"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/c_main_logo"
-            android:background="@android:color/transparent"
-            />
-    </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            android:orientation="horizontal"
+            android:weightSum="100">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:background="#16a085"
+                android:layout_gravity="bottom"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/menu1_icon"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/c_main_logo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="cari angkot"
+                    android:gravity="center"
+                    android:layout_below="@+id/menu1_icon"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#fff"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:background="#8e44ad"
+                android:layout_gravity="bottom"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/menu2_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:src="@drawable/basic_sheet_pen"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="riwayat"
+                    android:gravity="center"
+                    android:layout_below="@+id/menu2_icon"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#fff"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            android:orientation="horizontal"
+            android:weightSum="100">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:background="#8e44ad"
+                android:layout_gravity="bottom"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/menu3_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:src="@drawable/ecommerce_graph3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="statistik"
+                    android:gravity="center"
+                    android:layout_below="@+id/menu3_icon"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#fff"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:background="#16a085"
+                android:layout_gravity="bottom"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/menu4_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:src="@drawable/basic_settings"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="pengaturan"
+                    android:gravity="center"
+                    android:layout_below="@+id/menu4_icon"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#fff"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 
 </LinearLayout>
