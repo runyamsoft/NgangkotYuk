@@ -19,7 +19,7 @@
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:orientation="horizontal"
-            android:layout_weight="20"
+            android:layout_weight="30"
             android:background="#FF6600"
             android:gravity="center"
             android:paddingTop="15dp"
@@ -36,122 +36,167 @@
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="0dp"
-            android:layout_weight="40"
+            android:layout_weight="30"
             android:orientation="horizontal"
             android:weightSum="100">
             <RelativeLayout
+                android:onClick="openMap"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="50"
-                android:background="#16a085"
+                android:background="#FFCC3E"
                 android:layout_gravity="bottom"
                 android:gravity="center">
                 <ImageView
                     android:id="@+id/menu1_icon"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:src="@drawable/c_main_logo"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:src="@drawable/cari_angkot"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
                     />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="cari angkot"
-                    android:gravity="center"
-                    android:layout_below="@+id/menu1_icon"
-                    android:layout_centerHorizontal="true"
-                    android:textColor="#fff"
-                    android:textSize="18dp" />
+
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="50"
-                android:background="#8e44ad"
+                android:background="#66ffcc"
                 android:layout_gravity="bottom"
                 android:gravity="center">
                 <ImageView
                     android:id="@+id/menu2_icon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="120dp"
-                    android:src="@drawable/basic_sheet_pen"
+                    android:layout_width="130dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_height="130dp"
+                    android:src="@drawable/statistik"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
-
                     />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="riwayat"
-                    android:gravity="center"
-                    android:layout_below="@+id/menu2_icon"
-                    android:layout_centerHorizontal="true"
-                    android:textColor="#fff"
-                    android:textSize="18dp" />
+
             </RelativeLayout>
 
         </LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="0dp"
-            android:layout_weight="40"
+            android:layout_weight="5"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:background="#ff6600"
+                android:layout_gravity="bottom"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cari Angkot"
+                    android:textColor="#fff"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:background="#33cc99"
+                android:layout_gravity="bottom"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Statistik"
+                    android:textColor="#fff"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"
             android:orientation="horizontal"
             android:weightSum="100">
             <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="50"
-                android:background="#8e44ad"
+                android:background="#1d3240"
                 android:layout_gravity="bottom"
                 android:gravity="center">
                 <ImageView
                     android:id="@+id/menu3_icon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="120dp"
-                    android:src="@drawable/ecommerce_graph3"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:src="@drawable/pengaturan"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
                     />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="statistik"
-                    android:gravity="center"
-                    android:layout_below="@+id/menu3_icon"
-                    android:layout_centerHorizontal="true"
-                    android:textColor="#fff"
-                    android:textSize="18dp" />
+
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="50"
-                android:background="#16a085"
+                android:background="#ff8a80"
                 android:layout_gravity="bottom"
+                android:onClick="openRiwayat"
                 android:gravity="center">
                 <ImageView
                     android:id="@+id/menu4_icon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="120dp"
-                    android:src="@drawable/basic_settings"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:src="@drawable/riwayat"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
-
                     />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="pengaturan"
-                    android:gravity="center"
-                    android:layout_below="@+id/menu4_icon"
-                    android:layout_centerHorizontal="true"
-                    android:textColor="#fff"
-                    android:textSize="18dp" />
+
             </RelativeLayout>
 
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:orientation="horizontal"
+            android:weightSum="100">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:background="#0a7e71"
+                android:layout_gravity="bottom"
+                android:gravity="center">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pengaturan"
+                    android:textColor="#fff"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:background="#ff5253"
+                android:layout_gravity="bottom"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Riwayat"
+                    android:textColor="#fff"/>
+            </RelativeLayout>
+
+        </LinearLayout>
     </LinearLayout>
 
 
